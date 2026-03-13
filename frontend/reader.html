@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AI PDF Reader</title>
+
+<link rel="stylesheet" href="/static/style.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+<span>AI PDF Reader</span>
+<button onclick="changePDF()">Upload New PDF</button>
+</div>
+
+<div class="main">
+
+<div class="left-panel">
+<div id="pdfViewer"></div>
+</div>
+
+<div class="right-panel">
+<button onclick="summarize()">Summary</button>
+<div id="aiOutput"></div>
+</div>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>

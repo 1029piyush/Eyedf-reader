@@ -1,0 +1,89 @@
+body{
+margin:0;
+background:#0f172a;
+color:#e2e8f0;
+font-family:Inter, Arial;
+}
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 25px;
+background:#020617;
+border-bottom:1px solid #1e293b;
+}
+
+.upload-btn{
+background:#22c55e;
+border:none;
+padding:8px 14px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+.main{
+display:flex;
+height:92vh;
+}
+
+.left-panel{
+width:65%;
+overflow:auto;
+padding:20px;
+}
+
+.right-panel{
+width:35%;
+padding:20px;
+border-left:1px solid #1e293b;
+}
+
+canvas{
+margin-bottom:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.4);
+}
+
+.buttons button{
+background:#2563eb;
+border:none;
+padding:10px 14px;
+margin:6px;
+border-radius:6px;
+color:white;
+cursor:pointer;
+}
+
+#aiOutput{
+margin-top:15px;
+background:#111827;
+padding:18px;
+border-radius:8px;
+line-height:1.6;
+}
+
+.ai-title{
+font-weight:bold;
+color:#60a5fa;
+margin-top:10px;
+}
+.left-header{
+display:flex;
+align-items:center;
+gap:12px;
+}
+
+.back-btn{
+background:#1e293b;
+border:none;
+color:white;
+font-size:18px;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+}
+
+.back-btn:hover{
+background:#334155;
+}
