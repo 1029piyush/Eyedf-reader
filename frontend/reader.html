@@ -1,30 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>AI PDF Reader</title>
+<title>EyeDF Reader</title>
 
 <link rel="stylesheet" href="/static/style.css">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
 
 </head>
 
 <body>
 
 <div class="header">
-<span>AI PDF Reader</span>
-<button onclick="changePDF()">Upload New PDF</button>
+<span class="brand">EyeDF</span>
+<button class="secondary-btn" onclick="changePDF()">Upload New PDF</button>
 </div>
 
 <div class="main">
 
 <div class="left-panel">
-<div id="pdfViewer"></div>
+<div class="section-title">Readable Document</div>
+<div id="textViewer" class="text-viewer"></div>
 </div>
 
 <div class="right-panel">
-<button onclick="summarize()">Summary</button>
-<div id="aiOutput"></div>
+<div class="chat-card">
+<div class="chat-title">Ask Anything From PDF</div>
+<div class="chat-helper">Ask a question and get a direct answer from your document.</div>
+<div class="chat-input-shell">
+<div class="chat-input-row">
+<textarea id="chatInput" rows="2" placeholder="Ask a question from the PDF..."></textarea>
+<button class="chat-send-btn" onclick="askPdfQuestion()">Send</button>
+</div>
+</div>
+<div id="chatMessages" class="chat-messages"></div>
+</div>
+
+<div class="summary-card">
+<div class="summary-title">Quick Summary</div>
+<div id="aiOutput">Generating summary...</div>
+</div>
 </div>
 
 </div>
