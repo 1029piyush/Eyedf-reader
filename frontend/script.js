@@ -71,11 +71,6 @@ pdfText = localStorage.getItem("pdfText");
 if(pdfText){
 renderReadableText(pdfText);
 loadSummaryAutomatically();
-
-const chatContainer = document.getElementById("chatMessages");
-if(chatContainer && !chatContainer.children.length){
-appendChatMessage("I am ready. Ask any question from your PDF.", "bot");
-}
 }
 
 };
@@ -253,6 +248,8 @@ const container = document.getElementById("chatMessages");
 if(!container){
 return;
 }
+
+container.classList.add("expanded");
 
 const message = document.createElement("div");
 message.className = sender === "user" ? "user-message" : "bot-message";
